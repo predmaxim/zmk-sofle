@@ -49,16 +49,25 @@
     behaviors {
     };
 
+    macros {
+        vpn_menu: vpn_menu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(P)))>;
+            label = "VPN_MENU";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer0 {
             bindings = <
-&mt LEFT_ALT Z  &kp N1    &kp N2     &kp N3        &kp N4          &kp N5    &kp UP_ARROW     &kp N6  &kp N7     &kp N8      &kp N9         &kp N0     &kp PLUS
-&kp ESCAPE      &kp Q     &kp W      &kp E         &kp R           &kp T     &kp DOWN_ARROW   &kp Y   &kp U      &kp I       &kp O          &kp P      &kp MINUS
-&kp TAB         &kp A     &kp S      &kp D         &kp F           &kp G     &kp LEFT_ARROW   &kp H   &kp J      &kp K       &kp L          &kp SEMI   &kp APOS
-&kp CAPS        &kp Z     &kp X      &kp C         &kp V           &kp B     &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA   &kp DOT        &kp FSLH   &kp BACKSLASH
-&kp C_MUTE      &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 1     &kp ENTER        &mo 2   &kp SPACE  &kp DELETE  &kp BACKSPACE  &kp ENTER
+&vpn_menu   &kp N1    &kp N2     &kp N3        &kp N4          &kp N5    &kp UP_ARROW     &kp N6  &kp N7     &kp N8      &kp N9         &kp N0     &kp PLUS
+&kp ESCAPE  &kp Q     &kp W      &kp E         &kp R           &kp T     &kp DOWN_ARROW   &kp Y   &kp U      &kp I       &kp O          &kp P      &kp MINUS
+&kp TAB     &kp A     &kp S      &kp D         &kp F           &kp G     &kp LEFT_ARROW   &kp H   &kp J      &kp K       &kp L          &kp SEMI   &kp APOS
+&kp CAPS    &kp Z     &kp X      &kp C         &kp V           &kp B     &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA   &kp DOT        &kp FSLH   &kp BACKSLASH
+&kp C_MUTE  &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 1     &kp ENTER        &mo 2   &kp SPACE  &kp DELETE  &kp BACKSPACE  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
