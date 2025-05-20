@@ -69,10 +69,10 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "LAYER_0";
         };
 
-        layer_1 {
+        LAYER_1 {
             bindings = <
 &kp GRAVE        &trans   &trans   &trans  &trans  &trans     &mmv MOVE_UP     &trans     &trans        &trans    &trans         &trans            &trans
 &trans           &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &mmv MOVE_DOWN   &kp PG_UP  &kp LC(LEFT)  &kp UP    &kp RC(RIGHT)  &kp MINUS         &kp EQUAL
@@ -85,7 +85,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        LAYER_2 {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &trans
