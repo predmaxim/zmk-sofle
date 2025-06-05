@@ -156,7 +156,7 @@ layers:
   - {t: '5', s: '%'}
   - '6'
   - {t: '-', s: _}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -168,8 +168,8 @@ layers:
   - '1'
   - '2'
   - '3'
+  - _
   - +
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&soft_off'
