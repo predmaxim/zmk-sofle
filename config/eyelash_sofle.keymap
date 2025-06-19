@@ -62,7 +62,7 @@
 &kp ESC         &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8        &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB         &kp Q   &kp W   &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I         &kp O    &kp P     &kp BACKSLASH
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K         &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LCTRL       &kp Z   &kp X   &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_CONTROL
+&kp LCTRL       &kp Z   &kp X   &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp DELETE
 &kp C_MUTE      &trans  &trans  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 2   &kp LEFT_GUI  &trans   &trans
             >;
 
@@ -72,11 +72,11 @@
 
         LAYER_1 {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans     &mmv MOVE_UP     &trans        &trans        &trans        &trans         &trans         &trans
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &mmv MOVE_DOWN   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &trans
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &mmv MOVE_LEFT   &kp HOME      &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp PAGE_UP    &kp F11
-&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10    &mmv MOVE_RIGHT  &kp END       &kp LEFT      &kp DOWN      &kp RIGHT      &kp PAGE_DOWN  &kp F12
-&kp C_MUTE  &trans        &trans        &trans        &trans        &trans     &mkp LCLK        &trans        &trans        &mo 3         &trans         &trans
+&trans      &trans        &trans        &trans        &trans        &trans     &mmv MOVE_UP     &trans        &trans        &trans        &trans        &trans         &trans
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &mmv MOVE_DOWN   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &trans
+&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &mmv MOVE_LEFT   &kp F11       &kp HOME      &kp UP        &kp END       &kp PAGE_UP    &trans
+&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10    &mmv MOVE_RIGHT  &kp F12       &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
+&kp C_MUTE  &trans        &trans        &trans        &trans        &trans     &mkp LCLK        &trans        &trans        &mo 3         &trans        &trans
             >;
 
             display-name = "layer1";
@@ -85,11 +85,11 @@
 
         LAYER_2 {
             bindings = <
-&trans     &trans    &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans     &trans         &trans        &trans     &trans         &trans
-&kp GRAVE  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR       &kp BACKSPACE
-&trans     &trans    &trans       &trans    &trans      &trans         &mmv MOVE_LEFT   &kp MINUS  &kp PLUS       &kp LBKT      &kp RBKT   &kp BACKSLASH  &trans
-&trans     &trans    &trans       &trans    &trans      &trans         &mmv MOVE_RIGHT  &none      &kp NUMBER_0   &kp DOT       &kp COMMA  &kp PIPE       &kp DELETE
-&trans     &trans    &trans       &mo 3     &trans      &trans         &mkp LCLK        &trans     &trans         &trans        &trans     &trans
+&trans  &trans    &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans     &trans         &trans        &trans     &trans         &trans
+&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR       &trans
+&trans  &trans    &trans       &trans    &trans      &trans         &mmv MOVE_LEFT   &kp MINUS  &kp PLUS       &kp LBKT      &kp RBKT   &kp BACKSLASH  &kp GRAVE
+&trans  &trans    &trans       &trans    &trans      &trans         &mmv MOVE_RIGHT  &none      &kp NUMBER_0   &kp DOT       &kp COMMA  &kp PIPE       &trans
+&trans  &trans    &trans       &mo 3     &trans      &trans         &mkp LCLK        &trans     &trans         &trans        &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -97,11 +97,11 @@
 
         layer_3 {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans           &trans  &trans  &trans  &trans
             >;
         };
     };
