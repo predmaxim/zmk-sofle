@@ -72,11 +72,11 @@
 
         LAYER_1 {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans     &mmv MOVE_UP     &trans        &trans        &trans        &trans        &trans         &trans
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &mmv MOVE_DOWN   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &trans
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &mmv MOVE_LEFT   &kp F11       &kp HOME      &kp UP        &kp END       &kp PAGE_UP    &trans
-&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10    &mmv MOVE_RIGHT  &kp F12       &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
-&kp C_MUTE  &trans        &trans        &trans        &trans        &trans     &mkp LCLK        &trans        &trans        &mo 3         &trans        &trans
+&trans      &trans        &trans        &trans        &trans        &trans     &trans  &trans        &trans        &trans        &trans        &trans         &trans
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &trans
+&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &trans  &kp F11       &kp HOME      &kp UP        &kp END       &kp PAGE_UP    &trans
+&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10    &trans  &kp F12       &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
+&kp C_MUTE  &trans        &trans        &trans        &trans        &trans     &trans  &trans        &trans        &mo 3         &trans        &trans
             >;
 
             display-name = "layer1";
@@ -85,14 +85,14 @@
 
         LAYER_2 {
             bindings = <
-&trans  &trans    &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans     &trans         &trans        &trans     &trans         &trans
-&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR       &trans
-&trans  &trans    &trans       &trans    &trans      &trans         &mmv MOVE_LEFT   &kp MINUS  &kp PLUS       &kp LBKT      &kp RBKT   &kp BACKSLASH  &kp GRAVE
-&trans  &trans    &trans       &trans    &trans      &trans         &mmv MOVE_RIGHT  &none      &kp NUMBER_0   &kp DOT       &kp COMMA  &kp PIPE       &trans
-&trans  &trans    &trans       &mo 3     &trans      &trans         &mkp LCLK        &trans     &trans         &trans        &trans     &trans
+&trans  &trans    &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans     &trans         &trans
+&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR       &trans
+&trans  &trans    &trans       &trans    &trans      &trans         &trans  &kp MINUS  &kp PLUS       &kp LBKT      &kp RBKT   &kp BACKSLASH  &kp GRAVE
+&trans  &trans    &trans       &trans    &trans      &trans         &trans  &none      &kp NUMBER_0   &kp DOT       &kp COMMA  &kp PIPE       &trans
+&trans  &trans    &trans       &mo 3     &trans      &trans         &trans  &trans     &trans         &trans        &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_3 {
