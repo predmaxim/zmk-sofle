@@ -114,8 +114,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - {t: '=', s: +}
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - KP COMMA
+  - KP DOT
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
