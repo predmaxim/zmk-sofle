@@ -72,27 +72,27 @@
 
         LAYER_1 {
             bindings = <
-&trans  &trans    &trans       &trans    &trans      &trans         &trans  &trans          &trans         &trans        &trans      &trans         &trans
-&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LPAR    &kp RPAR       &trans
-&trans  &trans    &trans       &trans    &trans      &trans         &trans  &kp MINUS       &kp PLUS       &kp LBKT      &kp RBKT    &kp BACKSLASH  &kp GRAVE
-&trans  &trans    &trans       &trans    &trans      &trans         &trans  &kp UNDERSCORE  &kp EQUAL      &kp KP_COMMA  &kp KP_DOT  &kp PIPE       &trans
-&trans  &trans    &trans       &trans    &trans      &trans         &trans  &trans          &mo 3          &trans        &trans      &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
-        };
-
-        LAYER_2 {
-            bindings = <
 &trans      &trans  &trans  &trans  &trans  &trans     &trans  &trans   &trans    &trans    &trans     &trans         &trans
 &trans      &trans  &trans  &trans  &trans  &trans     &trans  &trans   &trans    &trans    &trans     &trans         &trans
 &trans      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &trans  &kp F11  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &trans
 &trans      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &kp F12  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
-&kp C_MUTE  &trans  &trans  &trans  &mo 3   &trans     &trans  &trans   &trans    &trans    &trans     &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans     &trans  &trans   &mo 3     &trans    &trans     &trans
             >;
 
-            display-name = "LAYER_2";
+            display-name = "LAYER_1";
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        LAYER_2 {
+            bindings = <
+&trans  &trans    &trans       &trans    &trans      &trans         &trans  &trans          &trans         &trans        &trans      &trans         &trans
+&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LPAR    &kp RPAR       &trans
+&trans  &trans    &trans       &trans    &trans      &trans         &trans  &kp MINUS       &kp PLUS       &kp LBKT      &kp RBKT    &kp BACKSLASH  &kp GRAVE
+&trans  &trans    &trans       &trans    &trans      &trans         &trans  &kp UNDERSCORE  &kp EQUAL      &kp KP_COMMA  &kp KP_DOT  &kp PIPE       &trans
+&trans  &trans    &trans       &trans    &mo 3       &trans         &trans  &trans          &trans         &trans        &trans      &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         LAYER_3 {
